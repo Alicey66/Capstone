@@ -1,6 +1,6 @@
 module.exports = {
   //    日行一善
-  actionType1: 'Daily Good Deeds',
+  actionType1: 'Deed of the Day',
   actionType2: 'Think-Tank',
   actionType3: 'Partner Challenge',
   actionType4: 'Community Service',
@@ -58,16 +58,16 @@ module.exports = {
     'Limit the number of participants to ensure a focused and effective experience for all. Regardless of whether or not you set a participant limit, you can set tasks to effectively screen and identify the best fit for the job. ',
   participant: '的参与者',
   note: 'Note to Registrants',
-  noteDesc: 'E.g Make sure to bring good quality hiking shoes',
-  ifYour: 'When faced with overwhelming interest in ',
+  noteDesc: 'E.g I think its something wrong with the engine, do you know how to fix that?',
+  ifYour: 'If your ',
   ifYourDesc:
-    ', use tasks to filter applicants. Choose from regular tasks or create custom ones for applicants to complete. Completing these tasks not only demonstrates their commitment to help, but also provides valuable insights into their skills and abilities. Helping you quickly identify the most suitable candidates for the job.',
-  startEndTimeDesc:
-    'start and end time. If you need to edit the end time or recreate the event after it ends, you can do so under “Profile” - “My Call for Actions”.',
-  meAndMe: 'My ',
+    'When faced with overwhelming interest, use tasks to filter applicants. Choose from regular tasks or create custom ones for applicants to complete. Completing these tasks not only demonstrates their commitment to help, but also provides valuable insights into their skills and abilities. Helping you quickly identify the most suitable candidates for the job.',
+  startEndTimeDesc3:
+    '. If you need to edit the end time or recreate the event after it ends, you can do so under “Profile” - “My Call for Actions”.',
+  meAndMe: 'Tags for me and my ',
   tagTitle: 'Tags',
   chooseMe: 'Select My',
-  keyPoint: ': Why Participate?',
+  keyPoint: ' is my Participation',
   addRecommend: 'Adding More ',
   callDetail:
     'Use text, photos, and video to explain your needs in detail, so participants can help you more effectively.',
@@ -95,16 +95,16 @@ module.exports = {
     tagTitle: 'My personality tag with \"Daily Favors\"',
   },
   partner: {
-    introDesc: 'Clearly describe the urgent matter you need help with. Users anywhere in the world can help you online or in person.',
-    introPlaceholder: 'E.g: I\'m looking for an accountability partner to help me quit smoking. Someone who can monitor me, take away my cigarettes, and support me for at least 3 months',
+    introDesc: 'Describe the challenge, the benefits for helpers, and highlight the unique advantages you offer.',
+    introPlaceholder: 'Seeking buddies to quit smoking together with a 3 month commitment.',
     keyPointDesc:
       'Participating in my \"Buddy Challenge\" in Tweebaa offers more than monetary rewards. It\'s about building quality connections, solving personal issues, and supporting each other to become better versions of ourselves. Join me and let\'s grow together.',
     keyPointPlaceholder:
       'Join my buddy challenge, hear my story of 40 years of smoking, and experience the harm it\'s caused. Whether you support me for two months or quit with me, surprise rewards await.',
   },
   volunteer: {
-    introDesc: 'Clearly describe the urgent matter you need help with. Users anywhere in the world can help you online or in person.',
-    introPlaceholder: 'E.g: Make a difference in the lives of rural students by volunteering to teach in a remote village in Longnan, Gansu.',
+    introDesc: 'Describe the challenge, the benefits for helpers, and highlight the unique advantages you offer.',
+    introPlaceholder: 'EXAMPLE: Volunteer to teach in a remote Chinese village.',
     keyPointDesc:
       'In Tweebaa\'s ecosystem, offering unpaid assistance brings rewards beyond money. This could mean gaining friendships, learning, solving personal challenges, networking, and more. Highlight your strengths to attract interest and support for your volunteering efforts.',
     keyPointPlaceholder:
@@ -128,18 +128,19 @@ module.exports = {
   },
   address: {
     //选择约见信息
-    selectMeetInfo: 'Select meeting info',
+    selectMeetInfo: 'Addresses',
     //+添加约见信息
-    addMeetInfo: 'Add meeting info"',
+    addMeetInfo: 'Add',
     //已设默认
     defaultAddress: 'Default set',
     //约见人手机号
-    meetPhone: 'Contact',
+    meetPhone: 'Phone Number',
     //约见地区
-    meetAddress: 'Address',
+    meetAddress: 'Appointment Area',
     //按城市、地址、地标搜索
     searchAddress: 'Search by city, address, landmark',
     //设为默认地址
-    setDefaultAddress: 'Set to the default address',
+    setDefaultAddress: 'Set as default address',
   },
+  screenTask: 'Screen application with Tasks',
 }
