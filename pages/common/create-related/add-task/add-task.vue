@@ -46,7 +46,7 @@
             <view class="text-center promotion-info top20 padding30">
               {{ $t('blog.add-type.Contentassistedpromotion') }}</view
             >
-            <view class="why-do-tasks padding30">
+            <view class="why-do-tasks padding30 top20">
               <image class="icon" src="/static/icons/trumpet-task.png" mode="aspectFit"></image>
               <text> {{ $t('blog.add-type.Helppromotethecontentyouspecify') }}</text>
             </view>
@@ -93,10 +93,11 @@
                   >
                   <view class="custom-title flex-center">
                     <image v-if="item.subImg" :src="item.subImg" class="custom-icon" />
-                    <view class="sub-title" v-html="item.subTitle.replace(/\n/g, '<br>')"></view>
+                    <view class="sub-title">{{ item.subTitle }}</view>
                   </view>
                   <view class="padding30 padding-btn">
-                    <view class="task-info" v-html="item.taskInfo.replace(/\n/g, '<br>')"></view>
+                    <view class="task-info">{{ item.taskInfo }}</view>
+
                     <view class="taskItem-title flex-between top40" style="font-size: 35rpx">
                       <image
                         v-if="item.followUserImg"
@@ -2051,7 +2052,7 @@ defineExpose({
         position: absolute;
         top: 30rpx;
         left: 40rpx;
-        font-size: 35rpx;
+        font-size: 32rpx;
         line-height: 1.6;
         width: 85%;
         background: linear-gradient(90deg, #7183fd, #a45ed1);
@@ -2063,7 +2064,7 @@ defineExpose({
       .taskItem-header-desc {
         position: absolute;
         text-align: center;
-        top: 125rpx;
+        top: 130rpx;
         left: 55rpx;
         font-size: 25rpx;
         width: 70%;
@@ -2211,7 +2212,7 @@ defineExpose({
       margin-right: 30rpx;
 
       .sub-title {
-        margin-top: 10rpx;
+        margin-top: 50rpx;
         padding: 20rpx;
         font-size: 24rpx;
       }
@@ -2327,4 +2328,10 @@ defineExpose({
   border-radius: 24rpx;
   min-height: 220rpx;
 }
+.icon {
+  width: 20rpx;
+  height:  20rpx;
+  margin-right: 30rpx ;
+}
+
 </style>
