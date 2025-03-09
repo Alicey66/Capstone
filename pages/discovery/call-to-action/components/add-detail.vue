@@ -9,7 +9,7 @@
           type === 'PAID_ACTIVITIES'
             ? $t('call.action.callDetail')
             : $t('call.action.hele.detailDesc1') +
-              (TRANSLATE?.preview?.type?.[data.activityType] || 'Call for Actions') +
+              TRANSLATE.preview.type[type] +
               $t('call.action.hele.detailDesc')
         }}
       </view>
@@ -41,7 +41,7 @@
         :borderBottom="false"
         backgroundColor="#F4F7FD"
         :placeholder="TRANSLATE.keyPoint.placeholder[type]"
-        placeholderStyle="fontSize:28rpx;color:#9DA2B1"
+        placeholderStyle="fontSize:25rpx;color:#9DA2B1"
         :size="28"
         padding="30rpx"
         v-model="data.keyPoint"
@@ -354,9 +354,18 @@
     <view class="item-line"></view>
 
     <view class="task-box">
-      <view class="task-header">
+
+
+        <view class="form-item-label flex-between flex-center">
+          <view class="form-item-text">{{ $t('call.action.screenTask') }}</view>
+          <tw-check @isShow="switchShowScreenTask($event)" :onlyVideo="data.isOpenShowScreenTask"></tw-check>
+        </view>
+
+
+
+        <view class="task-header" v-if="data.isOpenShowScreenTask">
         <view class="task-label">
-          {{ $t('discovery.ecosystem.setTasks1') }}<br />
+          {{ $t('discovery.ecosystem.setTasks1') }}
           {{ $t('group-settings.im.selectTheRightFit') }}
         </view>
         <view class="btn-task" hover-class="hoverClass" hover-stay-time="100" @click="selectTask('')">{{
@@ -365,17 +374,10 @@
       </view>
 
       <view class="form-item-hint">
-        {{ $t('call.action.ifYour') + '“' + TRANSLATE.preview.type[type] + '“' + $t('call.action.ifYourDesc') }}
+        {{ $t('call.action.ifYourDesc') }}
       </view>
 
-      <view>
-        <view-show-tasks1
-          :foundId="currentUserId"
-          :taskData="data.newPlan"
-          @deleteTask="deleteTask"
-          @taskDeleted="deleteTaskItem"
-        />
-      </view>
+
 
       <view class="task-desc">{{ $t('group-settings.im.instructionsToAttendMeetingsByDoingTasks') }}</view>
 
@@ -425,6 +427,7 @@ let data = reactive({
   joinLimitCount: '',
   //是否开启
   isOpenJoinLimitCount: true,
+  isOpenShowScreenTask: true,
   note: '', //注意事项
   talent: '',
   newPlan: computed(() => store.state.taskStore.publicTask),
@@ -509,6 +512,12 @@ let emitLongShort = dataLong => {
 }
 
 //选择任务
+let switchShowScreenTask = e => {
+  data.isOpenShowScreenTask = !data.isOpenShowScreenTask
+  if (!data.isOpenShowScreenTask) {
+    data.registerLimitCount = ''
+  }
+}
 let selectTask = type => {
   uni.navigateTo({
     url: `/pages/common/create-related/add-task/add-task?isTopBar=${true}`,
@@ -616,17 +625,42 @@ let onDecimal = e => {
   }
   .task-box {
     padding: 0 30rpx;
+ .form-item-label {
+      height: 112rpx;
+      .form-item-text {
+        padding: 50rpx 0 20rpx 0;
+        font-weight: 600;
+        background: #fff;
+        position: relative;
+        width: fit-content;
+        z-index: 2;
+      }
 
+      .form-item-text::after {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        bottom: 20rpx;
+        width: 120rpx;
+        height: 12rpx;
+        border-radius: 20px;
+        background: linear-gradient(64deg, #ffd977 19.67%, #ffbf43 83.73%);
+      }
+    }
     .task-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 50rpx;
+      margin-top: 10rpx;
+      width: auto;
+     // gap: 50px;
       .task-label {
         font-weight: 600;
-        font-size: 30rpx;
+        font-size: 24rpx;
         line-height: 44rpx;
         color: #1f2228;
+        width: 50%;
       }
       .btn-task {
         height: 68rpx;
@@ -637,6 +671,7 @@ let onDecimal = e => {
         line-height: 68rpx;
         color: white;
         font-size: 28rpx;
+        min-width: 120px;
       }
     }
     .form-item-hint {

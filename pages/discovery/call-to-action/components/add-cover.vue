@@ -1,8 +1,8 @@
 <template>
   <!--  封面设置-->
   <view class="box">
-
-    <view class="box-item">
+    <!--    线上线下 -->
+    <view class="box-item" style="padding-bottom: 0rpx">
       <view class="form-item-label">
         <view class="form-item-text-type">{{ $t('group-settings.groupEdit.type') }}</view>
       </view>
@@ -41,9 +41,8 @@
         </view>
       </view>
     </view>
-    <view class="item-line"></view>
-
-    <!--    简介-->
+   <view class="item-line"></view>
+        <!--    简介-->
     <view class="box-item" id="reward-introduce">
       <view class="form-item-label">
         <view class="form-item-text">{{ $t('call.action.intro') }}<text class="required">*</text></view>
@@ -120,7 +119,7 @@
         <view class="form-item-text">{{ $t('call.action.startEndTime') }}<text class="required">*</text></view>
       </view>
       <view class="form-item-hint">
-        {{ $t('t.general.set') + '“' + TRANSLATE.preview.type[pageType] + '“' + $t('call.action.startEndTimeDesc') }}
+        {{ $t('t.general.set1') +TRANSLATE.preview.type[pageType]+$t('call.action.startEndTimeDesc3') }}
       </view>
       <!--        开始与结束时间*-->
       <timeStartEnd ref="returnTime" @returnTime="onReturnTime"></timeStartEnd>
@@ -167,7 +166,7 @@
     <view class="box-item">
       <view class="form-item-label">
         <view class="form-item-text">
-          {{ $t('t.index.me') }} {{ TRANSLATE.preview.type[pageType] }} {{ $t('t.general.category') }}</view
+          {{ $t('t.general.category') }}</view
         >
       </view>
       <view class="form-item-hint"> {{ $t('blog.add-type.Socialcreation') }}</view>
@@ -195,7 +194,7 @@
     <view class="box-item">
       <view class="form-item-label">
         <view class="form-item-text"
-          >{{ $t('call.action.tagTitle') }}</view
+          >{{$t('call.action.meAndMe')}}{{TRANSLATE.preview.type[pageType]}}</view
         >
       </view>
       <view class="form-item-hint">
@@ -208,12 +207,13 @@
 
     <!--  我的位置-->
 
-    <view id="address" class="box-address">
+
+    <view id="address" class="box-item">
       <tw-address ref="addressRef" :showPopup="true" :title="false" @onChange="onChange($event)">
         <template v-slot:label>
-          <view class="task-NFT-content" style="padding: 0; margin-top: 0">
-            <view class="task-title-box">
-              <view class="task-NFT-title"> {{ $t('chat.group.myPosition') }}</view>
+          <view class="box-item" style="padding: 0; margin-top: 0">
+            <view class="form-item-label">
+              <view class="form-item-text"> {{ $t('chat.group.myPosition') }}</view>
             </view>
           </view>
         </template>
