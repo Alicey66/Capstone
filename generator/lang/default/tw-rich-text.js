@@ -1,0 +1,20 @@
+module.exports = {
+  setFrame: "Set video cover",
+  setFrameDescription: "Your IP brand image, first impressions matter!",
+  chooseFrame: "Select cover from video frame",
+  uploadCustomFrame: "Choose cover from photo album",
+  uploadCustomFrameDescription: "Show your brand's style with visuals to attract attention",
+  cancelUploadVideo: "Cancel",
+  delete: "Delete",
+  replace: "Replace",
+  play: "Play",
+  reselect: "Reselect",
+  ip: "Your IP brand image, first impression matters!",
+  translationError: "Translation error, please try again later",
+  textError: "Failed to get text, please try again later",
+  dataReturnError: "Data return error, please refresh the page",
+  networkError: "Network error. Please try again later.",
+  generatingData: "Generating Data...",
+  insertingImage: 'Inserting Image...',
+};
+

@@ -10,8 +10,15 @@ module.exports = {
   brainstormTitle: 'Create \"Think-Tank\"',
   partnerTitle: 'Create a \"Partner Challenge\"',
   volunteerTitle: 'Create a \"Community Service\"',
-  joint_activitiesTitle: 'Create a \"Get-Together\"',
+  joint_activitiesTitle: 'Create a Get-Together',
   paid_activitiesTitle: 'Create a \"Paid Errand\"',
+  editTypeLabel: 'Choose what type your call to action is',
+  introDescription: "Tell us what your call to action is about",
+  introPlaceholder: 'E.g: I need help moving my apartment this weekend',
+  editcoverlabel: 'Upload a cover image',
+  startTime: 'Start Time',
+  endTime: 'End Time',
+  registrationDeadline: 'Registration Deadline',
   actionBgText1: 'Helping others altruistically monetizes your emotional value.',
   actionBgText2: 'Find valuable connections.',
   goodDesc1:
@@ -64,7 +71,7 @@ module.exports = {
     'When faced with overwhelming interest, use tasks to filter applicants. Choose from regular tasks or create custom ones for applicants to complete. Completing these tasks not only demonstrates their commitment to help, but also provides valuable insights into their skills and abilities. Helping you quickly identify the most suitable candidates for the job.',
   startEndTimeDesc3:
     '. If you need to edit the end time or recreate the event after it ends, you can do so under “Profile” - “My Call for Actions”.',
-  meAndMe: 'Tags for me and my ',
+  meAndMe: 'Tags for my ',
   tagTitle: 'Tags',
   chooseMe: 'Select My',
   keyPoint: ' is my Participation',
@@ -95,7 +102,7 @@ module.exports = {
     tagTitle: 'My personality tag with \"Daily Favors\"',
   },
   partner: {
-    introDesc: 'Describe the challenge, the benefits for helpers, and highlight the unique advantages you offer.',
+    introDesc: 'Clearly describe the urgent matter you need help with. User anywhere in the world can help you online or in person.',
     introPlaceholder: 'Seeking buddies to quit smoking together with a 3 month commitment.',
     keyPointDesc:
       'Participating in my \"Buddy Challenge\" in Tweebaa offers more than monetary rewards. It\'s about building quality connections, solving personal issues, and supporting each other to become better versions of ourselves. Join me and let\'s grow together.',
@@ -111,8 +118,8 @@ module.exports = {
       'Volunteering in rural areas enhances children\'s English skills and offers a free way to explore nature. As a retired Red Cross member of over 30 years, I have stories to share. Interested in volunteering with me?',
   },
   joint_activities: {
-    introDesc: 'Describe the challenge, the benefits for helpers, and highlight the unique advantages you offer.',
-    introPlaceholder: 'EXAMPLE: Art professor needs caretaker for his grandmother for 3 days, offering 300 T-Beans & free tennis coaching.',
+    introDesc: 'Clearly describe the urgent matter you need help with. User anywhere in the world can help you online or in person.',
+    introPlaceholder: 'E.g: I\'m looking to form a small group of history and travel enthusiasts for a 3-day adventure.',
     keyPointDesc:
       'In Tweebaa\'s value-based social scene, networking by participating in activities demands time but offers benefits that go far beyond money. This includes quality connections, learning, problem-solving, and spiritual growth. Emphasize your strengths to show the value of engaging with you.',
     keyPointPlaceholder:
@@ -141,6 +148,20 @@ module.exports = {
     searchAddress: 'Search by city, address, landmark',
     //设为默认地址
     setDefaultAddress: 'Set as default address',
+    defaultset: 'Default',
+    copy:'Copy',
+    edit:  'Edit',
+
   },
   screenTask: 'Screen application with Tasks',
+  pleaseEnterAnEyeCatchingIntroduction: `Please enter an eye-catching introduction.`,
+  pleaseSubmitACoverImage:`Please submit a cover image`,
+  pleaseEnterAValidStartAndEndTIme:`Please enter a valid start and end time`,
+  pleaseSelectTheOverallValueOfMyPaidErrand:`Please enter the overall value`,
+  theDetailedDescriptionCannotBeEmpty: `The detailed description cannot be empty`,
+  theComprehesiveValueCannotBeEmpty: `The comprehensive value cannot be empty`,
+  pleaseEnterTheDetailIntroduction:`Please enter the detail introduction`,
+  contact: 'Contact :',
+  phone :  'Phone   : +',
+  address1:'address :',
 }

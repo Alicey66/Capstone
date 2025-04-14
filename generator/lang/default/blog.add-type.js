@@ -74,7 +74,7 @@ module.exports = {
   callActionCreate: 'Don\'t have a Call for Action? Create on now! >',
   selectCallAction: 'Select Call for Action',
   closeCommentDesc: 'When off, no one can comment.',
-  comprehensiverealization: 'In the Impact Economy era, making money is outdated. Learning is the future. Join groups on Tweebaa. Connect globally. Learn how your uniqueness creates conscious capital. Earn large profits by learning to unlock your multidimensional value and helping others do the same.',
+  comprehensiverealization: 'In todays economy, it is nots enough to just “make money”, the real power lies in making yourself "valuable." The greater your personal influence, the more valuable you become. Join Tweebaa’s global community, showcase your unique traits, and turn your passions into profit. Achieve financial freedom by monetizing your personal value!',
   Contentassistedpromotion: 'Select the content you\'d like to promote',
   contentfeedeachother: 'Explain how this content is relevant to your ECO+. How does it benefit your members? Why do you think they should check it out? Share your valuable insights!',
   Contentrelatedcategories: 'Select 1-3 relevant categories',

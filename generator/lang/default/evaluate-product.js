@@ -1,12 +1,12 @@
 module.exports = {
   'banner.desc1': 'Support \"dark horse\" products and honest reviews',
   'banner.desc2': 'Become a product review expert with your insights!',
-'form.qa1.title': '1. Is the product price very attractive and competitive in the market? *',
-'form.qa2.title': '2. Is this product very innovative and has significant differentiating features? *',
-'form.qa3.title': '3. Does this product address urgent and pressing pain points? *',
-'form.qa4.title': '4. Is there a high possibility of this product being included in the Tweebaa product warehouse? *',
-'form.qa5.title': '5. Do you think this product has the potential to achieve global blockbuster sales? *',
-'form.qa7.title': '6. If this product successfully enters the Tweebaa product warehouse, would you be willing to purchase it? *',
+'form.qa1.title': '1. Is the product price very attractive and competitive in the market?',
+'form.qa2.title': '2. Is this product very innovative and has significant differentiating features?',
+'form.qa3.title': '3. Does this product address urgent and pressing pain points?',
+'form.qa4.title': '4. Is there a high possibility of this product being included in the Tweebaa product warehouse?',
+'form.qa5.title': '5. Do you think this product has the potential to achieve global blockbuster sales?',
+'form.qa7.title': '6. If this product successfully enters the Tweebaa product warehouse, would you be willing to purchase it?',
 'form.qa.an1': 'Very attractive',
 'form.qa.an2': 'Average',
 'form.qa.an3': 'Yes',
@@ -47,5 +47,5 @@ module.exports = {
   're.reason.ability.batch': '可一次性大量购买',
   're.reason.ability.custom': '+自定义标签',
   'evalutionForm': 'Evalution Form',
-  "formBannerFullText": 'Support "dark horse" products entering the product warehouse with an honest and responsible attitude in evaluation. You too can become a product evaluation expert and earn continuous income with your insights!'
+  "formBannerFullText": 'Support "dark horse" products in the Showroom with honest reviews. Earn with your taste as an expert!'
 }

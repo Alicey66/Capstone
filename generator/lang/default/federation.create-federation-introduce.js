@@ -10,7 +10,7 @@ module.exports = {
   productValueFormula: 'Product Value = Functional Value + Emotional Value + Asset Value',
   kernelMeaning: "What is Tweebaa's Metaverse Alliance Program",
   solveTheFunctionValue:
-    "Are you tired of the constant struggle to get your product noticed? Are you looking for a way to break free from the constraints of traditional marketing?/nTweebaa's Metaverse Alliance Program has the answer./nTraditional product sales focus on product features and functions. However, they often fall short in satisfying our emotional desires. Products that evoke emotions and provide value beyond the functional will not only make people happier but also attract more customers.",
+    "Are you tired of the constant struggle to get your product noticed? Are you looking for a way to break free from the constraints of traditional marketing?\nTweebaa's Metaverse Alliance Program has the answer.\nTraditional product sales focus on product features and functions. However, they often fall short in satisfying our emotional desires. Products that evoke emotions and provide value beyond the functional will not only make people happier but also attract more customers.",
   specialBenefits: "Benefits of Joining Tweebaa's Metaverse Alliance Program",
   productCounterAttack:
     'Join the Tweebaa Metaverse Alliance and watch your product gain worldwide recognition without breaking the bank. With this program, small businesses can compete with big brands, skyrocket sales, and turn your dreams into reality.',
@@ -39,4 +39,6 @@ module.exports = {
   MakeTheProduct:
     'Your passions, interests, skills, life experiences—can all be turned into products. Share and monetize your multifaceted values today!',
   ApplyToJoin: 'Apply to join Tweebaa’s Metaverse Alliance Program!',
+  getFreeMassiveExposureForYourProductsAllianceMessage:"Get free, massive exposure for your products when you join Tweebaa's Metaverse Alliance Program.",
+  boostYourProductValueAndMakeGlobalHotSellingAReality:"Boost your product value and make global hot-selling  a reality!",
 }

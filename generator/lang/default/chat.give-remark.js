@@ -1,0 +1,18 @@
+module.exports = {
+  noteToTa: 'Remarks',
+  pushBarID: 'Tweebaa ID:',
+  taInMyEyes: 'Nickname',
+  asYourOnlineFriendsGrowGiveThemANicknameThatYouCanQuicklyRecognize: 'Use a Memorable Nickname. This is visible only to you',
+  giveThemMoreInformation: 'Add Remarks',
+  dataIsWealth: "Data is Wealth! Use this like a notepad. Jot down personal info, memorable moments or valuable insights. It's your go-to resource to help you make quick judgments and decisions.",
+  viewOrEditAllTheInformationYouHaveCommentedOnYourTa: 'View/Edit All Remarks',
+  addPersonalityTagsToRetainImportantMemoriesForEfficientValueSearchInTheFuture: 'Add Your Own Tags',
+  taExistingCustomPersonalityTags: 'Their Tags:',
+  sure: 'Confirm',
+  contactInformation: 'Contact',
+  addANewPhoneNumber: 'Add Contact Info',
+  addPicturesOrVideosThatHelpYouRememberThem: 'Add Relevant Visuals',
+  addBusinessCardsOrRelatedPictures: 'Add business card or photos',
+  canAlsoAdd: 'Images/Videos',
+  pieces: '\n(Max.4)',
+}

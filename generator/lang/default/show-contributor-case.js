@@ -1,0 +1,21 @@
+module.exports = {
+  title: "激励销售贡献者的设置范例",
+  intro: "设置的激励细节在详细页的展示范例如下，有吸引力的收益激励会吸引全球用户帮您推广",
+  addAllBox: "Add to your space for display and sales",
+  express: "Create engaging content (like text, images, or videos) to showcase your unique product and personal brand. A custom logo can be a great way to grab attention and make people curious about what you're offering. By sharing fresh and interesting content, you can increase sales and earn more rewards on the platform. Organizing group purchases can help you get better prices and higher profits.",
+  earn: "零售价与销售贡献者收益",
+  drop: "降",
+  deadline: "截止时间:",
+  issuePriceAll: "发行价/个",
+  limitPriceAll: "限时优惠价/个",
+  earnTiv: "根据个人TiV不同，每售出一个产品可获得的收益不同",
+  share: "销售贡献者—产品推广者",
+  myEarn: "我可获收益",
+  maxEarn: "最高可获收益",
+  productShare: "产品销售贡献者—分享者",
+  getAllEarn: "查看所有角色收益",
+  retailPurchase: "Best deals on Retail purchases",
+  time: "付款后48h发货",
+  yourBrand: "your Brand",
+  zeroCostAdd: "Add at zero cost to"
+  }
